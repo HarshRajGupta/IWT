@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* width: 100%; */
+    display: grid;
+    position: relative;
+    height: max-content;
+    font-family: "Poppins", sans-serif;
+    color: #141929;
+    letter-spacing: 0.8px;
+}
+
+head,
+script {
+    display: none;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* background: url(); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.profile {
+    height: 90vh;
+    max-width: 40vw;
+    object-fit: contain;
+}
+
+.container {
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: space-evenly;
+    grid-gap: 8rem;
+    align-items: center;
+}
+
+.box {
+    overflow-y: scroll;
+    max-height: 100vh;
+    max-width: 36vw;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.box::-webkit-scrollbar {
+    display: none;
+}
+
+.box tr {
+    height: 100vh;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.name_box {
+    display: block;
+    font-size: 48px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.name_box span {
+    display: inline;
+    color: #ff2e63;
+}
+
+.about {
+    line-height: 32px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.skill .progress_bar {
+    width: 60%;
+    height: 8px;
+    background: #141929;
+    margin: 0 18px;
+}
+
+.skill .progress_bar span {
+    height: 8px;
+    background: #ff2e63;
+}
+
+.c {
+    width: 90%;
+}
+
+.js {
+    width: 70%;
+}
+
+.py {
+    width: 50%;
+}
+
+.css {
+    width: 80%;
+}
+
+.dart {
+    width: 40%;
+}
+
+.cloud {
+    width: 35%;
+}
+
+.linux {
+    width: 60%;
+}
+.card .card_1{
+    background-color: rgba(0, 255, 255, 0.9);
+}
+.card .card_2{
+    background-color: rgba(0, 255, 255, 0.1);
+}
+.card .card_1, .card .card_2 {
+    font-weight: 500;
+    padding:  16px;
+    font-size: 20px;
+}
+
+.myImg {
+    margin: 10px;
+    height: 135px;
+}
+
+.name__ {
+    display: flex;
+}

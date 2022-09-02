@@ -4,22 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="tab icon" href="https://user-images.githubusercontent.com/77490864/133266102-cbf72eee-4807-465a-810c-5887f0028dca.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css" />
+    <link rel="tab icon"
+        href="https://user-images.githubusercontent.com/77490864/133266102-cbf72eee-4807-465a-810c-5887f0028dca.png"
+        type="image/x-icon">
     <title>Login</title>
     <script>
-        function abc() {
+        function handleSubmit() {
             const passWord = document.getElementById("passWord").value;
             const userName = document.getElementById("userName").value;
             console.log(passWord);
             if (
                 passWord === "CE@iiit" &&
-                parseInt(userName) >= 1 &&
-                parseInt(userName) <= 66
+                (userName === 'B520023' || userName === 'b520023' ||
+                    parseInt(userName) === 23)
             ) {
                 document.getElementById("passWord").value = "";
                 document.getElementById("userName").value = "";
-                location.replace(`B5200${userName}.html`);
+                location.replace(`B520023.html`);
             } else if (passWord !== "CE@iiit") {
                 alert(`Wrong Password`);
                 document.getElementById("passWord").value = "";
@@ -53,7 +55,7 @@
         </tr>
         <tr>
             <th>
-                <button onclick="abc()" id="button">Submit</button>
+                <button onclick="handleSubmit()" id="button">Submit</button>
             </th>
         </tr>
     </table>
