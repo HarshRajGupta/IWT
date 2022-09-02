@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 * {
     padding: 0;
@@ -8,7 +8,7 @@
     display: grid;
     position: relative;
     height: max-content;
-    font-family: 'Poppins';
+    font-family: "Poppins";
 }
 
 head,
@@ -17,7 +17,7 @@ script {
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     background-color: #08d9d648;
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ body {
 
 table {
     border: 2px solid #ff2e63;
-    width: 350px;
+    width: 320px;
     height: max-content;
     background: #141929;
     padding: 2rem;
@@ -84,6 +84,7 @@ button {
     scale: 0.98;
     transition: all 250ms ease-in-out;
 }
+
 button:hover {
     opacity: 0.98;
     scale: 1;

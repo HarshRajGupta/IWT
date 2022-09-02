@@ -3,19 +3,30 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="tab icon" href="https://user-images.githubusercontent.com/77490864/133266102-cbf72eee-4807-465a-810c-5887f0028dca.png" type="image/x-icon">
     <title>Login</title>
     <script>
         function abc() {
-            const passWord = document.getElementById('passWord').value;
-            const userName = document.getElementById('userName').value;
+            const passWord = document.getElementById("passWord").value;
+            const userName = document.getElementById("userName").value;
             console.log(passWord);
             if (
-                passWord === 'CE@iiit' &&
+                passWord === "CE@iiit" &&
                 parseInt(userName) >= 1 &&
                 parseInt(userName) <= 66
-            )
-                location.replace(`biodata_B5200${userName}.html`);
+            ) {
+                document.getElementById("passWord").value = "";
+                document.getElementById("userName").value = "";
+                location.replace(`B5200${userName}.html`);
+            } else if (passWord !== "CE@iiit") {
+                alert(`Wrong Password`);
+                document.getElementById("passWord").value = "";
+            } else {
+                alert(`Invalid Username`);
+                document.getElementById("userName").value = "";
+            }
         }
     </script>
 </head>
@@ -25,7 +36,7 @@
         <tr>
             <th>
                 <img src="https://user-images.githubusercontent.com/77490864/133266102-cbf72eee-4807-465a-810c-5887f0028dca.png"
-                    alt="" />
+                    alt="Login" />
             </th>
         </tr>
         <tr>
