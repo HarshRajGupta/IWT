@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script>
+        function abc() {
+            const password = document.getElementById('password').value;
+            const username = document.getElementById('userName').value;
+            console.log(password);
+            if (password === 'CE@iiit' && parseInt(username) >= 1 && parseInt(username) <= 66)
+                location.replace("biodata.html")
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="userName" placeholder="Enter your username"/>
+    <input type="password" id="password" placeholder="Enter your password"/>
+    <button onclick="abc()">
+        Submit
+    </button>
+</body>
+
+</html>
